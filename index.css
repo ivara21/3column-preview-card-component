@@ -1,0 +1,139 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This centers vertically */
+  margin: 0; /* Removes default margin */
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 770px) {
+  .main {
+    width: 600px;
+    
+  }
+
+  .div {
+    width: 125px;
+    height: 30px;
+  }
+
+  .div button.button {
+    margin-top:40px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+ body {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  
+  .sedans {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .luxury {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
+.div {
+  display: flex;
+  flex:1;
+  width: 195px;
+  display: inline-block;
+  margin: -3px;
+  height: 400px;
+  padding: 40px;
+  
+}
+
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.title  {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+  color:  hsl(0, 0%, 95%)
+}
+
+/* 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.paragraph {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color:  hsla(0, 0%, 100%, 0.75);
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.button {
+  height: 40px;
+  width: 120px;
+  margin-top: 100px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 400;
+  background-color: hsl(0, 0%, 95%)
+}
+
+.button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border: solid;
+  border-width: 1px;
+  border-color:hsl(0, 0%, 95%) ;
+}
+
+.sedansbtn {
+  color:  hsl(31, 77%, 52%);
+}
+
+.suvsbtn {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxurybtn {
+  color: hsl(179, 100%, 13%);
+}
